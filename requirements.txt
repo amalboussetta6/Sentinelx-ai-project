@@ -1,0 +1,11 @@
+# SentinelX AI — S2 (EDA) et S3 (baseline RUL)
+# Versions avec lesquelles les notebooks et les tests ont été exécutés (Python 3.13).
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+seaborn==0.13.2
+ipykernel==7.4.0
+pytest==9.1.1

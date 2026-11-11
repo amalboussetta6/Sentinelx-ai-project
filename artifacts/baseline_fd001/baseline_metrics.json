@@ -1,0 +1,265 @@
+{
+  "dataset": "FD001",
+  "sensors": [
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "features": [
+    "sensor_2_mean",
+    "sensor_3_mean",
+    "sensor_4_mean",
+    "sensor_7_mean",
+    "sensor_8_mean",
+    "sensor_9_mean",
+    "sensor_11_mean",
+    "sensor_12_mean",
+    "sensor_13_mean",
+    "sensor_14_mean",
+    "sensor_15_mean",
+    "sensor_17_mean",
+    "sensor_20_mean",
+    "sensor_21_mean",
+    "sensor_2_slope",
+    "sensor_3_slope",
+    "sensor_4_slope",
+    "sensor_7_slope",
+    "sensor_8_slope",
+    "sensor_9_slope",
+    "sensor_11_slope",
+    "sensor_12_slope",
+    "sensor_13_slope",
+    "sensor_14_slope",
+    "sensor_15_slope",
+    "sensor_17_slope",
+    "sensor_20_slope",
+    "sensor_21_slope",
+    "sensor_2_delta",
+    "sensor_3_delta",
+    "sensor_4_delta",
+    "sensor_7_delta",
+    "sensor_8_delta",
+    "sensor_9_delta",
+    "sensor_11_delta",
+    "sensor_12_delta",
+    "sensor_13_delta",
+    "sensor_14_delta",
+    "sensor_15_delta",
+    "sensor_17_delta",
+    "sensor_20_delta",
+    "sensor_21_delta"
+  ],
+  "window": 30,
+  "n_start": 20,
+  "evaluation_horizon": 127,
+  "validation_engines": [
+    1,
+    5,
+    11,
+    13,
+    19,
+    23,
+    31,
+    32,
+    34,
+    40,
+    45,
+    46,
+    54,
+    71,
+    74,
+    77,
+    78,
+    81,
+    84,
+    91
+  ],
+  "cross_validation": {
+    "method": "GroupKFold(5) sur les 80 moteurs d'entraînement",
+    "fold_engines": [
+      [
+        10,
+        17,
+        29,
+        30,
+        47,
+        51,
+        57,
+        59,
+        63,
+        66,
+        68,
+        69,
+        80,
+        90,
+        99,
+        100
+      ],
+      [
+        8,
+        12,
+        14,
+        21,
+        22,
+        39,
+        44,
+        53,
+        60,
+        76,
+        86,
+        88,
+        89,
+        92,
+        94,
+        97
+      ],
+      [
+        15,
+        20,
+        26,
+        28,
+        33,
+        37,
+        41,
+        48,
+        52,
+        55,
+        61,
+        64,
+        65,
+        70,
+        85,
+        96
+      ],
+      [
+        6,
+        7,
+        16,
+        24,
+        25,
+        35,
+        36,
+        38,
+        50,
+        67,
+        73,
+        79,
+        82,
+        87,
+        93,
+        95
+      ],
+      [
+        2,
+        3,
+        4,
+        9,
+        18,
+        27,
+        42,
+        43,
+        49,
+        56,
+        58,
+        62,
+        72,
+        75,
+        83,
+        98
+      ]
+    ],
+    "metrics_zone": {
+      "Régression linéaire": {
+        "RMSE": 16.7605,
+        "RMSE écart-type": 0.379,
+        "MAE": 13.803,
+        "R2": 0.7942
+      },
+      "Ridge": {
+        "RMSE": 16.6254,
+        "RMSE écart-type": 0.4754,
+        "MAE": 13.717,
+        "R2": 0.7974
+      },
+      "Forêt aléatoire": {
+        "RMSE": 12.8462,
+        "RMSE écart-type": 0.4365,
+        "MAE": 9.6121,
+        "R2": 0.879
+      }
+    }
+  },
+  "rul_cap": {
+    "Régression linéaire": 110,
+    "Ridge": 110,
+    "Forêt aléatoire": 110
+  },
+  "params": {
+    "Régression linéaire": {},
+    "Forêt aléatoire": {
+      "max_features": 0.33
+    },
+    "Ridge": {
+      "alpha": 1000.0
+    }
+  },
+  "selected_model": "Forêt aléatoire",
+  "random_forest_fixed_params": {
+    "n_estimators": 100,
+    "min_samples_leaf": 5,
+    "random_state": 42
+  },
+  "validation_metrics_zone": {
+    "Régression linéaire": {
+      "MAE": 12.8907,
+      "RMSE": 15.7172,
+      "R2": 0.8191
+    },
+    "Ridge": {
+      "MAE": 12.8775,
+      "RMSE": 15.6908,
+      "R2": 0.8197
+    },
+    "Forêt aléatoire": {
+      "MAE": 8.3526,
+      "RMSE": 11.4095,
+      "R2": 0.9046
+    }
+  },
+  "test_metrics_last_cycle": {
+    "Régression linéaire": {
+      "MAE": 15.094,
+      "RMSE": 19.148,
+      "R2": 0.7877
+    },
+    "Ridge": {
+      "MAE": 15.1881,
+      "RMSE": 19.1774,
+      "R2": 0.787
+    },
+    "Forêt aléatoire": {
+      "MAE": 10.5321,
+      "RMSE": 14.3962,
+      "R2": 0.88
+    }
+  },
+  "test_too_optimistic_selected_model": 51,
+  "test_set_note": "RUL_FD001.txt déjà lu par des versions précédentes (RMSE 22,69 ; 14,23 ; 17,05 ; 14,4) : score test non totalement indépendant",
+  "versions": {
+    "python": "3.14.7",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1"
+  }
+}

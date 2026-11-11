@@ -1,0 +1,76 @@
+{
+  "constant_columns": [
+    "setting_3",
+    "sensor_1",
+    "sensor_5",
+    "sensor_10",
+    "sensor_16",
+    "sensor_18",
+    "sensor_19"
+  ],
+  "excluded_columns": [
+    "sensor_6",
+    "setting_1",
+    "setting_2"
+  ],
+  "selected_sensors": [
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "redundant_pairs": [
+    {
+      "capteur_1": "sensor_9",
+      "capteur_2": "sensor_14",
+      "corrélation": 0.97
+    },
+    {
+      "capteur_1": "sensor_11",
+      "capteur_2": "sensor_12",
+      "corrélation": -0.85
+    },
+    {
+      "capteur_1": "sensor_4",
+      "capteur_2": "sensor_11",
+      "corrélation": 0.83
+    },
+    {
+      "capteur_1": "sensor_8",
+      "capteur_2": "sensor_13",
+      "corrélation": 0.83
+    },
+    {
+      "capteur_1": "sensor_7",
+      "capteur_2": "sensor_11",
+      "corrélation": -0.82
+    },
+    {
+      "capteur_1": "sensor_4",
+      "capteur_2": "sensor_12",
+      "corrélation": -0.81
+    },
+    {
+      "capteur_1": "sensor_7",
+      "capteur_2": "sensor_12",
+      "corrélation": 0.81
+    }
+  ],
+  "forbidden_as_feature": [
+    "unit_id",
+    "cycle",
+    "RUL",
+    "last_cycle",
+    "life_pct"
+  ]
+}

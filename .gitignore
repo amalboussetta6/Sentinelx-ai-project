@@ -1,0 +1,39 @@
+# --- Environnements Python ---------------------------------------------------
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# --- Python : fichiers compilés et paquets -----------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Tests et outils ---------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Données NASA C-MAPSS : à télécharger (voir data/README.md) -------------
+data/raw/
+
+# --- Modèle sérialisé : régénéré par notebooks/02_baseline_fd001.ipynb -------
+*.joblib
+*.pkl
+
+# --- Éditeurs et systèmes ----------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
